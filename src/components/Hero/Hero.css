@@ -44,3 +44,42 @@
         z-index: 2;
     }
 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-overflow: inherit;
+}
+
+    .hero-text>div:nth-child(3) {
+        font-size: 1rem;
+        font-weight: 200;
+        text-transform: none;
+        letter-spacing: 1px;
+        width: 80%;
+        display: inline-flex;
+    }
+
+.figures {
+    display: flex;
+    gap: 2rem;
+}
+
+    .figures > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .figures > div > span:first-of-type {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .figures > div > span:nth-child(2) {
+        color: var(--gray);
+        text-transform: uppercase;
+    }
