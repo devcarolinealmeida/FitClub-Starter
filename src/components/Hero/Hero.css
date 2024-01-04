@@ -83,3 +83,8 @@
         color: var(--gray);
         text-transform: uppercase;
     }
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}

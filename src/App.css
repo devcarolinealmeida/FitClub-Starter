@@ -28,3 +28,24 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
+
+.btn {
+  background-color: var(--orange);
+  color: white;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  border: 2px solid transparent;
+  transition: 300ms all ease-in;
+}
+  .btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: var(--orange);
+  }
+  .btn.hollow {
+    background-color: transparent;
+    border-color: var(--orange);
+  }
+  .btn.hollow:hover {
+    background-color: var(--orange);
+  }
