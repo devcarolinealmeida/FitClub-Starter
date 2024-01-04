@@ -6,8 +6,41 @@
 .left-h {
     padding: 1.5rem 2rem 2rem;
     flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
 }
 
 .right-h {
     flex: 1;
 }
+
+.the-best-ad {
+    position: relative;
+    background-color: #363d42;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    padding: .8rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    .the-best-ad > div {
+        background-color: var(--orange);
+        border-radius: 4rem;
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        width: 5.4rem;
+        height: 80%; 
+        z-index: 1;
+    }
+
+    .the-best-ad > span {
+        z-index: 2;
+    }
+
