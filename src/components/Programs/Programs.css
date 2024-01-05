@@ -1,0 +1,67 @@
+.programs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.programs-header {
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: clamp(1rem, 5vw, 3rem);
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.program-categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.category {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background: var(--gray);
+    color: white;
+    padding: 2rem;
+    flex: 1;
+    min-width: 10rem;
+}
+
+    .category:hover {
+        background: var(--planCard);
+    }
+
+    .category > svg {
+        width: 2rem;
+        height: 2rem;
+        fill: white;
+    }
+
+    .category > :nth-child(2) {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .category > :nth-child(3) {
+        font-size: .9rem;
+        line-height: 1.4rem;
+    }
+
+    .category > .join-now {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .category > .join-now > img {
+        width: 1rem;
+    }
