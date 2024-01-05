@@ -165,4 +165,10 @@
         font-size: 1rem;
     }
 
+/* blur hero */
+.blur-hero {
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
 
