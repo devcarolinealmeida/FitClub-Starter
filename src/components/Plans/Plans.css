@@ -1,0 +1,74 @@
+.plans-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: -4rem;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+    background: var(--caloryCard);
+    padding: 1.5rem;
+    width: 15rem;
+}
+    /* card midle */
+    .plan-card:nth-of-type(2) {
+        background: var(--planCard);
+        transform: scale(1.1);
+    }
+    .plan-card > svg {
+        fill: var(--orange);
+        width: 2rem;
+        height: 2rem;
+    }
+    .plan-card:nth-of-type(2) svg {
+        fill: white;
+    }
+    .plan-card:nth-of-type(2) button {
+       color: var(--orange);
+    }
+    /* end card midle */
+
+    .plan-card > :nth-child(2) {
+        font-weight: bold;
+    }
+    .plan-card > :nth-child(3) {
+        font-weight: bold;
+        font-size: 3.5rem;
+    }
+    .plan-card > :nth-child(5) {
+        font-size: .8rem;
+    }
+    .plan-card > :nth-child(5) > img {
+        width: .7rem;
+        margin-left: .5rem;
+    }
+
+    .plan-card .plan-features {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .plan-card .feature {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .plan-card .feature > img {
+        width: 1rem;
+      
+    }
+
