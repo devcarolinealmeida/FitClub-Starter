@@ -5,6 +5,7 @@ footer {
     padding: 4rem 0;
     align-items: center;
     border-top: 1px solid var(--lightgray);
+    position: relative;
 }
     footer > div {
         display: flex;
@@ -24,4 +25,21 @@ footer {
         margin: 0 auto;
         max-width: fit-content;
         width: 10rem;
+    }
+
+/* blur footer */
+.blur-footer-1,
+.blur-footer-2 {
+    width: 26rem;
+    height: 12rem;
+    filter: blur(200px);
+    bottom: 0;
+}
+    .blur-footer-1 {
+        right: 15%;
+        background: red;
+    }
+    .blur-footer-2 {
+        left: 15%;
+        background: rgb(255, 115, 0);
     }

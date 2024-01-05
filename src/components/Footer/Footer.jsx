@@ -14,6 +14,8 @@ export default function Footer() {
           <img src={Linkedin} alt="" />
       </div>
       <img src={Logo} alt="" />
+      <div className="blur blur-footer-1"></div>
+      <div className="blur blur-footer-2"></div>
     </footer>
   );
 }
