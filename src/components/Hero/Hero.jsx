@@ -10,6 +10,7 @@ import {motion} from 'framer-motion';
 
 const Hero = () => {
     const transition = {type: 'spring', duration:3}
+    const mobile = window.innerWidth<=1024 ? true: false;
   return (
     <div className='hero'>
         <div className="blur blur-hero"></div>
@@ -18,8 +19,8 @@ const Hero = () => {
             {/* the best ad */}
             <div className="the-best-ad">
                 <motion.div
-                initial={{left: '65%'}}
-                whileInView={{left:'8px'}}
+                initial={{left: mobile? '65%':'70%', opacity: 0}}
+                whileInView={{left:'8px', opacity: 1}}
                 transition={{...transition, type: 'tween'}}
                 ></motion.div>
                 <span>the best fitness club in the town</span>
