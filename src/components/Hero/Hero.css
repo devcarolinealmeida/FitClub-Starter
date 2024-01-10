@@ -23,6 +23,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        font-size: var(--fs-sm);
     }
 
         .the-best-ad > div {
@@ -45,14 +46,14 @@
         flex-direction: column;
         gap: 1.5rem;
         color: white;
-        font-size: 4.5rem;
+        font-size: var(--fs-h1);
         font-weight: bold;
         text-transform: uppercase;
         text-overflow: inherit;
     }
 
         .hero-text>div:nth-child(3) {
-            font-size: 1rem;
+            font-size: var(--fs-sm);
             font-weight: 200;
             text-transform: none;
             letter-spacing: 1px;
@@ -71,7 +72,7 @@
         }
 
         .figures > div > span:first-of-type {
-            font-size: 2rem;
+            font-size: var(--fs-h3);
             color: white;
         }
 
@@ -110,7 +111,7 @@
         right: 4rem;
         top: 7rem;
         color: white;
-        font-size: 1.5rem;
+        font-size: var(--fs-h4);
     }
 
     .heart-rate > img {
@@ -119,14 +120,14 @@
 
     .heart-rate > span:first-of-type {
         color: var(--gray);
-        font-size: 1rem;
+        font-size: var(--fs-sm);
     }
 
     .hero-image {
         position: absolute;
         top: 10rem;
         right: 8rem;
-        width: 23rem;
+        width: clamp(10rem,30vw,23rem);
     }
 
     .hero-image-back {
@@ -149,20 +150,26 @@
         right: 28rem;
     }
 
+        @media (max-width:1185px) {
+            .calories {
+                right: 0;
+            }
+        }
+
     .calories > img {
-        width: 3rem;
+        width: clamp(1rem, 10vw, 3rem);
     }
 
     .calories > div {
         display: flex;
         flex-direction: column;
         color: white;
-        font-size: 1.5rem;
+        font-size: var(--fs-h4);
     }
 
     .calories > div >span:first-child {
         color: var(--gray);
-        font-size: 1rem;
+        font-size: var(--fs-sm);
     }
 
 /* blur hero */
@@ -170,5 +177,14 @@
     width: 22rem;
     height: 30rem;
     left: 0;
+}
+
+@media  (max-width:860px) {
+    .hero {
+        flex-direction: column;
+    } 
+    .right-h {
+        display: none;
+    }
 }
 

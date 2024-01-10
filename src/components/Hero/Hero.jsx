@@ -15,16 +15,16 @@ const Hero = () => {
         <div className="blur blur-hero"></div>
         <div className='left-h'>
             <Header/>
-        {/* the best ad */}
+            {/* the best ad */}
             <div className="the-best-ad">
                 <motion.div
-                initial={{left: '238px'}}
+                initial={{left: '65%'}}
                 whileInView={{left:'8px'}}
                 transition={{...transition, type: 'tween'}}
                 ></motion.div>
                 <span>the best fitness club in the town</span>
             </div>
-        {/* Hero Heading */}
+            {/* Hero Heading */}
             <div className="hero-text">
                 <div>
                     <span className='stroke-text'>Shape </span>
@@ -37,22 +37,25 @@ const Hero = () => {
                     <span>In here we will help you to shape and build your ideal body and live up your life to fullest</span>
                 </div>
             </div>
-        {/* Hero data figures */}
-            <div className="figures">
-                <div>
-                    <span>+ 140</span>
-                    <span>Expert coaches</span>
+            <div>
+                {/* Hero data figures */}
+                <div className="figures">
+                    <div>
+                        <span>+ 140</span>
+                        <span>Expert coaches</span>
+                    </div>
+                    <div>
+                        <span>+ 978</span>
+                        <span>Members joined</span>
+                    </div>
+                    <div>
+                        <span>+ 50</span>
+                        <span>Fitness programs</span>
+                    </div>
                 </div>
-                <div>
-                    <span>+ 978</span>
-                    <span>Members joined</span>
-                </div>
-                <div>
-                    <span>+ 50</span>
-                    <span>Fitness programs</span>
-                </div>
+                
             </div>
-        {/* Hero buttons */}
+            {/* Hero buttons */}
             <div className='hero-buttons'>
                 <buttons className="btn">Get Started</buttons>
                 <buttons className="btn hollow">Learn More</buttons>
@@ -78,17 +81,17 @@ const Hero = () => {
             transition={transition}
             src={hero_image_back} alt="" className='hero-image-back'/>
         {/* Hero images bg */}
-            <motion.div 
-            initial={{right: '37rem'}}
+            <div 
+            /* initial={{right: '37rem'}}
             whileInView={{right:'28rem'}}
-            transition={transition}
+            transition={transition} */
             className="calories">
                 <img src={Calories} alt="" />
                 <div>
                     <span>Calories burned</span>
                     <span>220 kcal</span>
                 </div>
-            </motion.div>
+            </div>
         </div>
     </div>
   )
