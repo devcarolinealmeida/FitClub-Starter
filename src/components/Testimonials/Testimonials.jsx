@@ -17,9 +17,15 @@ const Testimonials = () => {
         <span className="stroke-text">What they</span>
         <span>say about us</span>
         {/* testimonial content */}
-        <span>
+        <motion.span
+        key={selected}
+        initial={{ opacity: 0, x:-100}}
+        animate={{ opacity:1, x: 0}}
+        exit={{ opacity:0, x:-100}}
+        transition={transition}
+        >
             {testimonialsData[selected].review}
-        </span>
+        </motion.span>
         <span>
             <span style={ {color:"var(--orange)"}}>{testimonialsData[selected].name}</span>
             <span> - {testimonialsData[selected].status}</span>
@@ -33,10 +39,16 @@ const Testimonials = () => {
         ></motion.div>
         <motion.div
         initial={{ opacity:0, x: 100}}
-        transition={{...transition, duration: 2}}
-        whileInView={{ opacity:1, x: 0 }}
+        transition={{ ...transition, duration: 2}}
+        whileInView={{ opacity: 1, x: 0 }}
         ></motion.div>
-        <img src={testimonialsData[selected].image} alt="" />
+        <motion.img
+        key={selected}
+        initial={{ opacity:0, x: 100}}
+        animate={{ opacity:1, x: 0}}
+        exit={ {opacity: 0, x: -100}}
+        transition={transition}
+        src={testimonialsData[selected].image} alt="" />
         <div className="arrows">
             <img 
             onClick={()=> {
