@@ -9,7 +9,7 @@ function Plans() {
     <div className="plans-container">
       <div className="blur blur-plans-1"></div>
       <div className="blur blur-plans-2"></div>
-      <div className="programs-header" style={{gap:"2rem"}}>
+      <div className="programs-header">
         <span className="stroke-text">Ready to start</span>
         <span>your journey</span>
         <span className="stroke-text">now withus</span>

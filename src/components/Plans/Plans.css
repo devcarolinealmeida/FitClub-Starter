@@ -7,11 +7,16 @@
     position: relative;
 }
 
+    .plans-container > .programs-header {
+        gap: 1rem;
+    }
+
 .plans {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .plan-card {
@@ -85,3 +90,15 @@
         top: 10rem;
         right: 0;
     }
+
+@media screen and (max-width: 1024px) {
+    .plans-container {
+        margin-top: 0;
+    }
+    .plans-container > .programs-header {
+        gap: .5rem;
+    }
+    .plan-card:nth-of-type(2) {
+        transform: scale(1);    
+    }
+}   
