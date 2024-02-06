@@ -1,21 +1,23 @@
 import React from 'react';
-import Header from '../Header/Header.jsx';
+/* import Header from '../Header/Header.jsx'; */
 import './Hero.css';
 import hero_image from '../../assets/hero_image.png';
 import hero_image_back from '../../assets/hero_image_back.png';
 import Heart from '../../assets/heart.png';
 import Calories from '../../assets/calories.png';
 import {motion} from 'framer-motion';
+import Navbar from '../Navbar/Navbar.jsx';
 
 
 const Hero = () => {
     const transition = {type: 'spring', duration:3}
     const mobile = window.innerWidth<=1024 ? true: false;
   return (
-    <div className='hero'>
+    <div className='hero' id="hero">
         <div className="blur blur-hero"></div>
         <div className='left-h'>
-            <Header/>
+            {/* <Header/> */}
+            <Navbar/>
             {/* the best ad */}
             <div className="the-best-ad">
                 <motion.div

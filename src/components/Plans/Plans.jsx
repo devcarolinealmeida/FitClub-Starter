@@ -6,7 +6,7 @@ import WhiteTick from "../../assets/whiteTick.png";
 
 function Plans() {
   return (
-    <div className="plans-container">
+    <div className="plans-container" id="plans">
       <div className="blur blur-plans-1"></div>
       <div className="blur blur-plans-2"></div>
       <div className="programs-header">

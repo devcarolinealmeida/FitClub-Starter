@@ -22,3 +22,15 @@
     .header-menu > li:hover {
         color: var(--orange);
     }
+
+    @media (max-width:860px) {
+        .header > .header-menu {
+            position: fixed;
+            right: 2rem;
+            z-index: 99;
+            flex-direction: column;
+            background-color: var(--appColor);
+            padding: 2rem;
+            min-width: 50vw;
+        }
+    }
